@@ -376,7 +376,7 @@ void MenuBar::_notification(int p_what) {
 			}
 
 			Vector2 pos = DisplayServer::get_singleton()->mouse_get_position() - mouse_pos_adjusted - get_global_position();
-			if (pos == old_mouse_pos) {
+			if (pos == Vector2(old_mouse_pos)) {
 				return;
 			}
 			old_mouse_pos = pos;
